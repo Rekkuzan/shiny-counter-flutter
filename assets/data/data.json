@@ -1,0 +1,542 @@
+{
+  "games": [
+    {
+      "names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u8d64"
+        },
+        {
+          "language": "ko",
+          "value": "\ub808\ub4dc"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u7d05"
+        },
+        {
+          "language": "fr",
+          "value": "Rouge"
+        },
+        {
+          "language": "de",
+          "value": "Rot"
+        },
+        {
+          "language": "es",
+          "value": "Rojo"
+        },
+        {
+          "language": "it",
+          "value": "Rossa"
+        },
+        {
+          "language": "en",
+          "value": "Red"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u7d05"
+        }
+      ],
+      "generation": "generation-i",
+      "version_name": "red",
+      "id": 1
+    },
+    {
+      "names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u7dd1"
+        },
+        {
+          "language": "ko",
+          "value": "\ube14\ub8e8"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u85cd"
+        },
+        {
+          "language": "fr",
+          "value": "Bleu"
+        },
+        {
+          "language": "de",
+          "value": "Blau"
+        },
+        {
+          "language": "es",
+          "value": "Azul"
+        },
+        {
+          "language": "it",
+          "value": "Blu"
+        },
+        {
+          "language": "en",
+          "value": "Blue"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u85cd"
+        }
+      ],
+      "generation": "generation-i",
+      "version_name": "blue",
+      "id": 2
+    },
+    {
+      "names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u30d4\u30ab\u30c1\u30e5\u30a6"
+        },
+        {
+          "language": "ko",
+          "value": "\ud53c\uce74\uce04"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u76ae\u5361\u4e18"
+        },
+        {
+          "language": "fr",
+          "value": "Jaune"
+        },
+        {
+          "language": "de",
+          "value": "Gelb"
+        },
+        {
+          "language": "es",
+          "value": "Amarillo"
+        },
+        {
+          "language": "it",
+          "value": "Gialla"
+        },
+        {
+          "language": "en",
+          "value": "Yellow"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u76ae\u5361\u4e18"
+        }
+      ],
+      "generation": "generation-i",
+      "version_name": "yellow",
+      "id": 3
+    },
+    {
+      "names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u91d1"
+        },
+        {
+          "language": "ko",
+          "value": "\uace8\ub4dc"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u91d1"
+        },
+        {
+          "language": "fr",
+          "value": "Or"
+        },
+        {
+          "language": "de",
+          "value": "Gold"
+        },
+        {
+          "language": "es",
+          "value": "Oro"
+        },
+        {
+          "language": "it",
+          "value": "Oro"
+        },
+        {
+          "language": "en",
+          "value": "Gold"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u91d1"
+        }
+      ],
+      "generation": "generation-ii",
+      "version_name": "gold",
+      "id": 4
+    },
+    {
+      "names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u9280"
+        },
+        {
+          "language": "ko",
+          "value": "\uc2e4\ubc84"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u9280"
+        },
+        {
+          "language": "fr",
+          "value": "Argent"
+        },
+        {
+          "language": "de",
+          "value": "Silber"
+        },
+        {
+          "language": "es",
+          "value": "Plata"
+        },
+        {
+          "language": "it",
+          "value": "Argento"
+        },
+        {
+          "language": "en",
+          "value": "Silver"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u9280"
+        }
+      ],
+      "generation": "generation-ii",
+      "version_name": "silver",
+      "id": 5
+    }
+  ],
+  "pokemon": [
+    {
+      "name": "bulbasaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "capture_rate": 45,
+      "is_baby": false,
+      "is_legendary": false,
+      "is_mythical": false,
+      "id": 1,
+      "localized_names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u30d5\u30b7\u30ae\u30c0\u30cd"
+        },
+        {
+          "language": "roomaji",
+          "value": "Fushigidane"
+        },
+        {
+          "language": "ko",
+          "value": "\uc774\uc0c1\ud574\uc528"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u5999\u86d9\u7a2e\u5b50"
+        },
+        {
+          "language": "fr",
+          "value": "Bulbizarre"
+        },
+        {
+          "language": "de",
+          "value": "Bisasam"
+        },
+        {
+          "language": "es",
+          "value": "Bulbasaur"
+        },
+        {
+          "language": "it",
+          "value": "Bulbasaur"
+        },
+        {
+          "language": "en",
+          "value": "Bulbasaur"
+        },
+        {
+          "language": "ja",
+          "value": "\u30d5\u30b7\u30ae\u30c0\u30cd"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u5999\u86d9\u79cd\u5b50"
+        }
+      ]
+    },
+    {
+      "name": "ivysaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "capture_rate": 45,
+      "is_baby": false,
+      "is_legendary": false,
+      "is_mythical": false,
+      "id": 2,
+      "localized_names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u30d5\u30b7\u30ae\u30bd\u30a6"
+        },
+        {
+          "language": "roomaji",
+          "value": "Fushigisou"
+        },
+        {
+          "language": "ko",
+          "value": "\uc774\uc0c1\ud574\ud480"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u5999\u86d9\u8349"
+        },
+        {
+          "language": "fr",
+          "value": "Herbizarre"
+        },
+        {
+          "language": "de",
+          "value": "Bisaknosp"
+        },
+        {
+          "language": "es",
+          "value": "Ivysaur"
+        },
+        {
+          "language": "it",
+          "value": "Ivysaur"
+        },
+        {
+          "language": "en",
+          "value": "Ivysaur"
+        },
+        {
+          "language": "ja",
+          "value": "\u30d5\u30b7\u30ae\u30bd\u30a6"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u5999\u86d9\u8349"
+        }
+      ]
+    },
+    {
+      "name": "venusaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "capture_rate": 45,
+      "is_baby": false,
+      "is_legendary": false,
+      "is_mythical": false,
+      "id": 3,
+      "localized_names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u30d5\u30b7\u30ae\u30d0\u30ca"
+        },
+        {
+          "language": "roomaji",
+          "value": "Fushigibana"
+        },
+        {
+          "language": "ko",
+          "value": "\uc774\uc0c1\ud574\uaf43"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u5999\u86d9\u82b1"
+        },
+        {
+          "language": "fr",
+          "value": "Florizarre"
+        },
+        {
+          "language": "de",
+          "value": "Bisaflor"
+        },
+        {
+          "language": "es",
+          "value": "Venusaur"
+        },
+        {
+          "language": "it",
+          "value": "Venusaur"
+        },
+        {
+          "language": "en",
+          "value": "Venusaur"
+        },
+        {
+          "language": "ja",
+          "value": "\u30d5\u30b7\u30ae\u30d0\u30ca"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u5999\u86d9\u82b1"
+        }
+      ]
+    },
+    {
+      "name": "charmander",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "capture_rate": 45,
+      "is_baby": false,
+      "is_legendary": false,
+      "is_mythical": false,
+      "id": 4,
+      "localized_names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u30d2\u30c8\u30ab\u30b2"
+        },
+        {
+          "language": "roomaji",
+          "value": "Hitokage"
+        },
+        {
+          "language": "ko",
+          "value": "\ud30c\uc774\ub9ac"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u5c0f\u706b\u9f8d"
+        },
+        {
+          "language": "fr",
+          "value": "Salam\u00e8che"
+        },
+        {
+          "language": "de",
+          "value": "Glumanda"
+        },
+        {
+          "language": "es",
+          "value": "Charmander"
+        },
+        {
+          "language": "it",
+          "value": "Charmander"
+        },
+        {
+          "language": "en",
+          "value": "Charmander"
+        },
+        {
+          "language": "ja",
+          "value": "\u30d2\u30c8\u30ab\u30b2"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u5c0f\u706b\u9f99"
+        }
+      ]
+    },
+    {
+      "name": "charmeleon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "capture_rate": 45,
+      "is_baby": false,
+      "is_legendary": false,
+      "is_mythical": false,
+      "id": 5,
+      "localized_names": [
+        {
+          "language": "ja-Hrkt",
+          "value": "\u30ea\u30b6\u30fc\u30c9"
+        },
+        {
+          "language": "roomaji",
+          "value": "Lizardo"
+        },
+        {
+          "language": "ko",
+          "value": "\ub9ac\uc790\ub4dc"
+        },
+        {
+          "language": "zh-Hant",
+          "value": "\u706b\u6050\u9f8d"
+        },
+        {
+          "language": "fr",
+          "value": "Reptincel"
+        },
+        {
+          "language": "de",
+          "value": "Glutexo"
+        },
+        {
+          "language": "es",
+          "value": "Charmeleon"
+        },
+        {
+          "language": "it",
+          "value": "Charmeleon"
+        },
+        {
+          "language": "en",
+          "value": "Charmeleon"
+        },
+        {
+          "language": "ja",
+          "value": "\u30ea\u30b6\u30fc\u30c9"
+        },
+        {
+          "language": "zh-Hans",
+          "value": "\u706b\u6050\u9f99"
+        }
+      ]
+    }
+  ],
+  "pokemonByGames": {
+    "3": [
+      1,
+      4
+    ],
+    "1": [
+      1,
+      4
+    ],
+    "2": [
+      1,
+      4
+    ],
+    "10": [
+      1,
+      4
+    ],
+    "11": [
+      1,
+      4
+    ],
+    "15": [
+      1,
+      4
+    ],
+    "16": [
+      1,
+      4
+    ],
+    "23": [
+      1,
+      4
+    ],
+    "24": [
+      1,
+      4
+    ],
+    "29": [
+      1,
+      4
+    ],
+    "30": [
+      1,
+      4
+    ]
+  }
+}
