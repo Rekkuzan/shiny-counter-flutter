@@ -1,7 +1,7 @@
 {
   "games": [
     {
-      "names": [
+      "localized_names": [
         {
           "language": "ja-Hrkt",
           "value": "\u8d64"
@@ -40,11 +40,10 @@
         }
       ],
       "generation": "generation-i",
-      "version_name": "red",
       "id": 1
     },
     {
-      "names": [
+      "localized_names": [
         {
           "language": "ja-Hrkt",
           "value": "\u7dd1"
@@ -83,11 +82,10 @@
         }
       ],
       "generation": "generation-i",
-      "version_name": "blue",
       "id": 2
     },
     {
-      "names": [
+      "localized_names": [
         {
           "language": "ja-Hrkt",
           "value": "\u30d4\u30ab\u30c1\u30e5\u30a6"
@@ -126,11 +124,10 @@
         }
       ],
       "generation": "generation-i",
-      "version_name": "yellow",
       "id": 3
     },
     {
-      "names": [
+      "localized_names": [
         {
           "language": "ja-Hrkt",
           "value": "\u91d1"
@@ -169,11 +166,10 @@
         }
       ],
       "generation": "generation-ii",
-      "version_name": "gold",
       "id": 4
     },
     {
-      "names": [
+      "localized_names": [
         {
           "language": "ja-Hrkt",
           "value": "\u9280"
@@ -212,7 +208,6 @@
         }
       ],
       "generation": "generation-ii",
-      "version_name": "silver",
       "id": 5
     }
   ],
@@ -220,6 +215,9 @@
     {
       "name": "bulbasaur",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "sprite_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "sprite_animated": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/1.gif",
+      "sprite_animated_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/1.gif",
       "capture_rate": 45,
       "is_baby": false,
       "is_legendary": false,
@@ -275,6 +273,9 @@
     {
       "name": "ivysaur",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "sprite_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "sprite_animated": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/2.gif",
+      "sprite_animated_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/2.gif",
       "capture_rate": 45,
       "is_baby": false,
       "is_legendary": false,
@@ -330,6 +331,9 @@
     {
       "name": "venusaur",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "sprite_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png",
+      "sprite_animated": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/3.gif",
+      "sprite_animated_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/3.gif",
       "capture_rate": 45,
       "is_baby": false,
       "is_legendary": false,
@@ -385,6 +389,9 @@
     {
       "name": "charmander",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "sprite_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png",
+      "sprite_animated": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/4.gif",
+      "sprite_animated_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/4.gif",
       "capture_rate": 45,
       "is_baby": false,
       "is_legendary": false,
@@ -440,6 +447,9 @@
     {
       "name": "charmeleon",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "sprite_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png",
+      "sprite_animated": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/5.gif",
+      "sprite_animated_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/showdown/shiny/5.gif",
       "capture_rate": 45,
       "is_baby": false,
       "is_legendary": false,

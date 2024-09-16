@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shiny_hunt_tracker/data_loader.dart';
 import 'package:shiny_hunt_tracker/models/hunt.dart';
 import 'package:shiny_hunt_tracker/utils/hunt_save_utils.dart';
 import 'hunt_creation_screen.dart';
@@ -15,6 +16,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final HuntSaveUtils _huntSaveUtils = HuntSaveUtils();
   List<Hunt> _hunts = [];
+  Future<bool>? _loaded;
 
   @override
   void initState() {
@@ -24,10 +26,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _loadHunts() async {
     final savedHunts = await _huntSaveUtils.loadHunts();
+    final loaded = _loadData();
     // Parse savedHunts into List<Hunt> if necessary
     setState(() {
-      _hunts = savedHunts; // Populate with parsed data
+      _hunts = savedHunts;
+      _loaded = loaded;
     });
+  }
+
+  Future<bool> _loadData() async
+  {
+    // Load data asynchronously
+    await DataLoader.loadPokemonData();
+
+    return true;
   }
 
   @override
@@ -43,10 +55,13 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: _hunts.length,
         itemBuilder: (context, index) {
           final hunt = _hunts[index];
+          final pokemon = DataLoader.pokemons![hunt.pokemonId]!;
+          final game = DataLoader.games![hunt.gameId]!;
+          
           return Card(
             child: ListTile(
-              title: Text(hunt.pokemon),
-              subtitle: Text('${hunt.game} - ${hunt.method}'),
+              title: Text(pokemon.name.getValue("en")),
+              subtitle: Text('${game.name.getValue("en")} - ${hunt.method}'),
               onTap: () {
                 Navigator.pushNamed(
                   context,

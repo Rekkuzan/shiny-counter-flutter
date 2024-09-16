@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shiny_hunt_tracker/data_loader.dart';
 import 'package:shiny_hunt_tracker/models/hunt.dart';
 import 'package:shiny_hunt_tracker/utils/hunt_save_utils.dart';
 
@@ -19,14 +20,21 @@ class _HuntDetailScreenState extends State<HuntDetailScreen> {
   @override
   void initState() {
     super.initState();
+    _loadData();
+  }
+
+  Future<void> _loadData() async
+  {
+    // Load data asynchronously
+    await DataLoader.loadPokemonData();
     _hunt = widget.hunt;
   }
 
   Future<void> _incrementHuntCount() async {
     setState(() {
       _hunt = Hunt(
-        pokemon: _hunt.pokemon,
-        game: _hunt.game,
+        pokemonId: _hunt.pokemonId,
+        gameId: _hunt.gameId,
         method: _hunt.method,
         count: _hunt.count + 1,
       );
@@ -40,8 +48,8 @@ class _HuntDetailScreenState extends State<HuntDetailScreen> {
     // Logic for completing the hunt, e.g., marking it as complete
     setState(() {
       _hunt = Hunt(
-        pokemon: _hunt.pokemon,
-        game: _hunt.game,
+        pokemonId: _hunt.pokemonId,
+        gameId: _hunt.gameId,
         method: _hunt.method,
         count: _hunt.count,
         // Assuming you might add a 'completed' flag or similar property
@@ -70,15 +78,17 @@ class _HuntDetailScreenState extends State<HuntDetailScreen> {
   @override
   Widget build(BuildContext context) {
     final textTheme = Theme.of(context).textTheme;
+    final pokemon = DataLoader.pokemons![_hunt.pokemonId]!;
+    final game = DataLoader.games![_hunt.gameId]!;
     return Scaffold(
-      appBar: AppBar(title: Text(_hunt.pokemon)),
+      appBar: AppBar(title: Text(pokemon.name.getValue("en"))),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Pokémon: ${_hunt.pokemon}', style: textTheme.bodyMedium),
-            Text('Game: ${_hunt.game}', style: textTheme.titleMedium),
+            Text('Pokémon: ${pokemon.name.getValue("en")}', style: textTheme.bodyMedium),
+            Text('Game: ${game.name.getValue("en")}', style: textTheme.titleMedium),
             Text('Method: ${_hunt.method}', style: textTheme.titleMedium),
             Text('Count: ${_hunt.count}', style: textTheme.titleMedium),
             const SizedBox(height: 20),
