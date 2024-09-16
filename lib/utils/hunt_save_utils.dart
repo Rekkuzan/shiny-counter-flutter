@@ -19,7 +19,7 @@ class HuntSaveUtils {
       return List<Hunt>.empty();
     }
     final List<dynamic> jsonList = jsonDecode(jsonString);
-    var listHunts = jsonList.map((json) => Hunt.fromMap(json)).toList();
+    var listHunts = jsonList.map((json) => Hunt.fromMap(json)).toList(growable: true);
     listHunts.removeWhere((hunt) => hunt.gameId < 0 || hunt.pokemonId < 0);
 
     return listHunts;
@@ -42,8 +42,12 @@ class HuntSaveUtils {
 
   Future<void> addHunt(Hunt hunt) async {
     List<Hunt> hunts = await _loadHunts();
-    hunts.add(hunt);
-    await _saveHunts(hunts);
+
+    List<Hunt> newHunts = List.empty(growable: true);
+    newHunts.addAll(hunts);
+    newHunts.add(hunt);
+
+    await _saveHunts(newHunts);
   }
 
   Future<List<Hunt>> loadHunts() async {

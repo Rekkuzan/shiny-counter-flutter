@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shiny_hunt_tracker/data_loader.dart';
 import 'package:shiny_hunt_tracker/models/hunt.dart';
+import 'package:shiny_hunt_tracker/screens/home_screen_card.dart';
 import 'package:shiny_hunt_tracker/utils/hunt_save_utils.dart';
 import 'hunt_creation_screen.dart';
 import 'hunt_detail_screen.dart';
@@ -31,6 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       _hunts = savedHunts;
       _loaded = loaded;
+
+      print("Loaded ${savedHunts.length}");
     });
   }
 
@@ -57,19 +60,19 @@ class _HomeScreenState extends State<HomeScreen> {
           final hunt = _hunts[index];
           final pokemon = DataLoader.pokemons![hunt.pokemonId]!;
           final game = DataLoader.games![hunt.gameId]!;
-          
-          return Card(
-            child: ListTile(
-              title: Text(pokemon.name.getValue("en")),
-              subtitle: Text('${game.name.getValue("en")} - ${hunt.method}'),
-              onTap: () {
-                Navigator.pushNamed(
-                  context,
-                  HuntDetailScreen.routeName,
-                  arguments: hunt,
-                ).then((_) => _loadHunts());
-              },
-            ),
+
+          return HomeScreenCard(
+            title: pokemon.name.getValue("en"),
+            subtitle: '${game.name.getValue("en")} - ${hunt.method}',
+            spriteUrl: pokemon.sprite_shiny,
+            count: hunt.count,
+            onTap: () {
+              Navigator.pushNamed(
+                context,
+                HuntDetailScreen.routeName,
+                arguments: hunt,
+              ).then((_) => _loadHunts());
+            },
           );
         },
       ),

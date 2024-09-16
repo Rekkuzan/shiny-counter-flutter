@@ -89,7 +89,7 @@ class _HuntCreationScreenState extends State<HuntCreationScreen> {
                           ),
                         ),
                         items: DataLoader.games!.values.toList(),
-                        itemAsString: (item) => item.name.getValue("en"),// Use loaded data
+                        itemAsString: (item) => 'Pokemon ${item.name.getValue("en")}',// Use loaded data
                         selectedItem: _selectedGame >= 0 ? DataLoader.games![_selectedGame] : null,
                         onChanged: (value) {
                           setState(() {
