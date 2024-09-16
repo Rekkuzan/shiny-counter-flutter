@@ -9,11 +9,11 @@ class DataLoader {
 }
 
 
-class PokemonNameSprite {
+class LabelSpriteContainer {
   final String label;
   final String spriteUrl;
 
-  PokemonNameSprite({required this.label, required this.spriteUrl});
+  LabelSpriteContainer({required this.label, required this.spriteUrl});
 }
 
 List<String> getGameNamesInLanguage(Map<String, dynamic> data, String languageCode) {
@@ -40,10 +40,10 @@ List<String> getPokemonNamesInLanguage(Map<String, dynamic> data, String languag
   return names;
 }
 
-List<PokemonNameSprite> getPokemonNamesInLanguageAndSprite(Map<String, dynamic> data, String languageCode) {
+List<LabelSpriteContainer> getPokemonNamesInLanguageAndSprite(Map<String, dynamic> data, String languageCode) {
   List<dynamic> pokemonList = data['pokemon'];
-  List<PokemonNameSprite> pokemons = pokemonList.map<PokemonNameSprite>((pokemon) {
-    return PokemonNameSprite (
+  List<LabelSpriteContainer> pokemons = pokemonList.map<LabelSpriteContainer>((pokemon) {
+    return LabelSpriteContainer (
         label: (pokemon['localized_names'] as List<dynamic>).firstWhere(
           (name) => name['language'] == languageCode,
       orElse: () => {'value': 'Unknown'},

@@ -24,7 +24,7 @@ class _HuntCreationScreenState extends State<HuntCreationScreen> {
   Map<String, dynamic>? _data;
   List<String>? _gamesAsString;
   List<String>? _pokemonAsString;
-  List<PokemonNameSprite>? _pokemons;
+  List<LabelSpriteContainer>? _pokemons;
 
   @override
   void initState() {
@@ -147,7 +147,7 @@ class _HuntCreationScreenState extends State<HuntCreationScreen> {
                         && _selectedMethod != null
                         && _pokemonAsString != null
                         && _pokemons != null)
-                      DropdownSearch<PokemonNameSprite>(
+                      DropdownSearch<LabelSpriteContainer>(
                         dropdownDecoratorProps: const DropDownDecoratorProps(
                           dropdownSearchDecoration: InputDecoration(
                             labelText: "Pokémon",
